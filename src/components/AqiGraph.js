@@ -14,7 +14,7 @@ export default function AqiGraph({ selectedCity }) {
     const finalUpdatesToShow = updatesToShow > totalUpdates ? totalUpdates : updatesToShow;
     const graphHistory = getLastNUpdates(history, finalUpdatesToShow);
     const barWidth = updatesToShow > 10 ? 500 / updatesToShow : 50;
-    const selectedCityBackground = "violet";
+    const selectedCityBackground = "blue";
     const compareCityBackground = "purple";
     return (
         <div className="container">
@@ -65,7 +65,7 @@ export default function AqiGraph({ selectedCity }) {
                             width: barWidth,
                             left: (index * barWidth),
                             zIndex: cityToCompareData && (selectedCityData.aqi > cityToCompareData.aqi) ? 1 : 0,
-                            opacity: 0.7
+                            opacity: 0.8
                         };
 
                         return (
