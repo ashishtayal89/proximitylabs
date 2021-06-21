@@ -1,7 +1,9 @@
 import _ from "lodash";
 import utils from "../utils";
 
-const subscriptionEndpoints = { aqi: { url: "ws://city-ws.herokuapp.com", socket: null } };
+const wsProtocol = window.location.protocol === "https:" ? "wss" : "ws";
+
+const subscriptionEndpoints = { aqi: { url: `${wsProtocol}://city-ws.herokuapp.com`, socket: null } };
 
 let isInitialized;
 
