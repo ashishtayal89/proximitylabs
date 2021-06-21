@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.graphModifiers{
+    padding-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+}
+
+.graphModifiers .updatesToShow{
+    padding-left: 10px;
+}
+
+.graphContainer{
+    position: relative;
+    background: skyblue;
+    border-left: 3px solid black;
+    border-bottom: 2px solid black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.graphContainer .layer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphContainer .layer.good {
+    background: #3abe3e;
+    height: 50px;
+}
+
+.graphContainer .layer.satisfactory {
+    background: lightgreen;
+    height: 50px;
+}
+
+.graphContainer .layer.moderate {
+    background: yellow;
+    height: 100px;
+}
+
+.graphContainer .layer.poor {
+    background: orange;
+    height: 100px;
+}
+
+.graphContainer .layer.verypoor {
+    background: red;
+    height: 100px;
+}
+
+.graphContainer .layer.severe {
+    background: maroon;
+    height: 100px;
+}
+
+.graphContainer .bar{
+    position:absolute;
+    bottom:0px;
+    border:1px solid black;
+    box-sizing: border-box;
+}
+
+.graphData{
+    padding-top:5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graphData .selectedCity,
+.graphData .cityToCompare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphData .colorScheme{
+    width: 10px;
+    height: 10px;
+    border:1px solid black;
+    margin-right: 5px;
+}

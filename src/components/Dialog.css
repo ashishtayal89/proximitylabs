@@ -1,0 +1,40 @@
+.dialogContainer{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog{
+    background: white;
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 500px;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 5px;
+}
+
+.close .button{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding:5px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}

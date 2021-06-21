@@ -1,0 +1,40 @@
+.aqiTable,
+.aqiTable td,
+.aqiTable th {
+    border:1px solid black
+}
+
+.aqiTable td,
+.aqiTable th {
+    padding: 10px;
+    text-align: start;
+}
+
+.aqiTable tr{
+    transition: background 3s;
+    cursor: pointer;
+}
+
+.aqiTable tr.good{
+    background: #3abe3e;
+}
+
+.aqiTable tr.satisfactory {
+    background: lightgreen;
+}
+
+.aqiTable tr.moderate {
+    background: yellow;
+}
+
+.aqiTable tr.poor {
+    background: orange;
+}
+
+.aqiTable tr.verypoor {
+    background: red;
+}
+
+.aqiTable tr.severe {
+    background: maroon;
+}
