@@ -68,6 +68,11 @@
     box-sizing: border-box;
 }
 
+.graphContainer .bar:hover {
+    opacity: 1 !important;
+}
+
+
 .graphData{
     padding-top:5px;
     font-size: 15px;

@@ -55,7 +55,8 @@ export default function AqiGraph({ selectedCity }) {
                             height: parseInt(selectedCityData.aqi),
                             width: barWidth,
                             left: (index * barWidth),
-                            zIndex: cityToCompareData && (selectedCityData.aqi > cityToCompareData.aqi) ? 0 : 1
+                            zIndex: cityToCompareData && (selectedCityData.aqi > cityToCompareData.aqi) ? 0 : 1,
+                            opacity: 0.7
                         };
 
                         const cityToCompareStyle = cityToCompare && {
@@ -63,7 +64,8 @@ export default function AqiGraph({ selectedCity }) {
                             height: parseInt(cityToCompareData.aqi),
                             width: barWidth,
                             left: (index * barWidth),
-                            zIndex: cityToCompareData && (selectedCityData.aqi > cityToCompareData.aqi) ? 1 : 0
+                            zIndex: cityToCompareData && (selectedCityData.aqi > cityToCompareData.aqi) ? 1 : 0,
+                            opacity: 0.7
                         };
 
                         return (
